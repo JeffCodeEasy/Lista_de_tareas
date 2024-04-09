@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.toDoList[index][1] = !value;
     });
+    db.updateDataBase();
   }
 
   void saveNewTask() {
